@@ -89,7 +89,7 @@ cells.forEach( cell => {
 
 const bonusFun = document.createElement(`div`)
 document.querySelector(`header`).after(bonusFun)
-bonusFun.textContent = `Shade over grid to reveal hidden image before you get started (bonus) ☺`
+bonusFun.textContent = `"Color'' over grid to reveal hidden image before you get started (bonus) ☺`
 bonusFun.style.fontFamily =`fantasy`
 bonusFun.style.fontSize = `30px`
 bonusFun.style.textAlign = `center`
