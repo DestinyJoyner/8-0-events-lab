@@ -20,17 +20,17 @@ const palette = document.querySelectorAll(`#palette .color`)
 // console.log(palette) //-> all 8 
 palette.forEach( color => {
   color.addEventListener(`click`, e => {
-    currentColor.style.backgroundColor = `${e.target.style.background}`
+    currentColor.style.backgroundColor = e.target.style.background
   })
 })
 
-// create variable to access all .cell boxes on page which are children of main #canvas
+// create variable to access all .cell boxes on page which are children of main eleement id #canvas
 const cells = document.querySelectorAll(`#canvas .cell`)
 // console.log(cells) // -> array of 100 divs with .cell class
 
-//toggle .cell class ??
+// loop and apply event listeners to all cells (blocks) to be activated when clicked, to change its background to currentcolor background color
 cells.forEach( cell => {
   cell.addEventListener(`click`, e => {
-    e.target.style.backgroundColor = `${currentColor.style.backgroundColor}`
+    e.target.style.backgroundColor = currentColor.style.backgroundColor
   })
 })
